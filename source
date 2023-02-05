@@ -1,0 +1,2 @@
+if user.Text == "D3sease" and pass.Text == "IOjjskHJ2jkS" then
+		script.Parent.Parent.Parent.Mainlogin:Destroy()
