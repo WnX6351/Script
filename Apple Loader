@@ -1,0 +1,290 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Screengui = Instance.new("ScreenGui")
+local Loader = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Name1 = Instance.new("TextLabel")
+local Logo = Instance.new("ImageLabel")
+local LB = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local DarkMode = Instance.new("ImageButton")
+local Notification = Instance.new("Frame")
+local name1 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local text1 = Instance.new("TextLabel")
+local text2 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Notification2 = Instance.new("Frame")
+local name1_2 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local text1_2 = Instance.new("TextLabel")
+local text2_2 = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+Screengui.Name = "Screengui"
+Screengui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Screengui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Loader.Name = "Loader"
+Loader.Parent = Screengui
+Loader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loader.Position = UDim2.new(0.377219826, 0, 0.439903855, 0)
+Loader.Size = UDim2.new(0, 400, 0, 160)
+
+UICorner.CornerRadius = UDim.new(0, 30)
+UICorner.Parent = Loader
+
+Name1.Name = "Name1"
+Name1.Parent = Loader
+Name1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name1.BackgroundTransparency = 1.000
+Name1.Position = UDim2.new(0.25, 0, 0, 0)
+Name1.Size = UDim2.new(0, 200, 0, 50)
+Name1.Font = Enum.Font.SourceSans
+Name1.Text = "Loader"
+Name1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Name1.TextSize = 40.000
+
+Logo.Name = "Logo"
+Logo.Parent = Name1
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.0299999993, 0, 0.100000001, 0)
+Logo.Size = UDim2.new(0, 40, 0, 40)
+Logo.Image = "http://www.roblox.com/asset/?id=41715858"
+Logo.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+LB.Name = "LB"
+LB.Parent = Loader
+LB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LB.BackgroundTransparency = 0.650
+LB.Position = UDim2.new(0.125, 0, 0.467083365, 0)
+LB.Size = UDim2.new(0, 300, 0, 10)
+
+Bar.Name = "Bar"
+Bar.Parent = LB
+Bar.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Bar.BorderSizePixel = 0
+Bar.Size = UDim2.new(0, 0, 0, 10)
+
+UICorner_2.Parent = Bar
+
+UICorner_3.Parent = LB
+
+DarkMode.Name = "DarkMode"
+DarkMode.Parent = Loader
+DarkMode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkMode.BackgroundTransparency = 1.000
+DarkMode.BorderSizePixel = 0
+DarkMode.Position = UDim2.new(0.0500000305, 0, 0.0625, 0)
+DarkMode.Size = UDim2.new(0, 30, 0, 30)
+DarkMode.Image = "http://www.roblox.com/asset/?id=7219714288"
+DarkMode.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+Notification.Name = "Notification"
+Notification.Parent = Screengui
+Notification.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Notification.BackgroundTransparency = 0.600
+Notification.Position = UDim2.new(0.865278602, 0, 0.652513981, 0)
+Notification.Size = UDim2.new(0, 200, 0, 120)
+Notification.Visible = false
+
+name1.Name = "name1"
+name1.Parent = Notification
+name1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name1.BackgroundTransparency = 1.000
+name1.Size = UDim2.new(0, 200, 0, 20)
+name1.Font = Enum.Font.SourceSans
+name1.Text = "Apple Notification"
+name1.TextColor3 = Color3.fromRGB(255, 255, 255)
+name1.TextSize = 20.000
+
+UICorner_4.CornerRadius = UDim.new(0, 25)
+UICorner_4.Parent = Notification
+
+text1.Name = "text1"
+text1.Parent = Notification
+text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text1.BackgroundTransparency = 1.000
+text1.Position = UDim2.new(0, 0, 0.324999988, 0)
+text1.Size = UDim2.new(0, 200, 0, 20)
+text1.Font = Enum.Font.SourceSans
+text1.Text = "Thanks for using,"
+text1.TextColor3 = Color3.fromRGB(255, 255, 255)
+text1.TextSize = 20.000
+text1.TextTransparency = 0.400
+
+text2.Name = "text2"
+text2.Parent = Notification
+text2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text2.BackgroundTransparency = 1.000
+text2.Position = UDim2.new(0, 0, 0.491666675, 0)
+text2.Size = UDim2.new(0, 200, 0, 20)
+text2.Font = Enum.Font.SourceSans
+text2.Text = "Hope you enjoy."
+text2.TextColor3 = Color3.fromRGB(255, 255, 255)
+text2.TextSize = 20.000
+text2.TextTransparency = 0.400
+
+TextLabel.Parent = Notification
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.833333313, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 20)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made by WnX#6351"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+TextLabel.TextTransparency = 0.400
+
+Notification2.Name = "Notification2"
+Notification2.Parent = Screengui
+Notification2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Notification2.BackgroundTransparency = 0.600
+Notification2.Position = UDim2.new(0.865278602, 0, 0.652513981, 0)
+Notification2.Size = UDim2.new(0, 200, 0, 120)
+
+name1_2.Name = "name1"
+name1_2.Parent = Notification2
+name1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name1_2.BackgroundTransparency = 1.000
+name1_2.Size = UDim2.new(0, 200, 0, 20)
+name1_2.Font = Enum.Font.SourceSans
+name1_2.Text = "Apple Notification"
+name1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+name1_2.TextSize = 20.000
+
+UICorner_5.CornerRadius = UDim.new(0, 25)
+UICorner_5.Parent = Notification2
+
+text1_2.Name = "text1"
+text1_2.Parent = Notification2
+text1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text1_2.BackgroundTransparency = 1.000
+text1_2.Position = UDim2.new(0, 0, 0.324999988, 0)
+text1_2.Size = UDim2.new(0, 200, 0, 20)
+text1_2.Font = Enum.Font.SourceSans
+text1_2.Text = "Thanks for using,"
+text1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+text1_2.TextSize = 20.000
+text1_2.TextTransparency = 0.400
+
+text2_2.Name = "text2"
+text2_2.Parent = Notification2
+text2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text2_2.BackgroundTransparency = 1.000
+text2_2.Position = UDim2.new(0, 0, 0.491666675, 0)
+text2_2.Size = UDim2.new(0, 200, 0, 20)
+text2_2.Font = Enum.Font.SourceSans
+text2_2.Text = "Hope you enjoy."
+text2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+text2_2.TextSize = 20.000
+text2_2.TextTransparency = 0.400
+
+TextLabel_2.Parent = Notification2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.833333313, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 20)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Made by WnX#6351"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextTransparency = 0.400
+
+-- Scripts:
+
+local function IPKN_fake_script() -- DarkMode.LocalScript 
+	local script = Instance.new('LocalScript', DarkMode)
+
+	local x = script.Parent
+	local loader = x.Parent.Parent.Loader
+	local n = script.Parent.Parent.Name1
+	local c = n.Logo
+	local bar = script.Parent.Parent.LB.Bar
+	local bar2 = script.Parent.Parent.LB
+	
+	x.MouseButton1Down:Connect(function()
+		if x.ImageColor3 == Color3.fromRGB(0,0,0) then
+			x.ImageColor3 = Color3.fromRGB(255,255,255)
+			loader.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+			c.ImageColor3 = Color3.fromRGB(255,255,255)
+			n.TextColor3 = Color3.fromRGB(255,255,255)
+			bar.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			bar2.BackgroundColor3 = Color3.fromRGB(159, 159, 159)
+		elseif x.ImageColor3 == Color3.fromRGB(255,255,255) then
+			x.ImageColor3 = Color3.fromRGB(0,0,0)
+			loader.BackgroundColor3 = Color3.fromRGB(255,255,255)
+			c.ImageColor3 = Color3.fromRGB(0,0,0)
+			n.TextColor3 = Color3.fromRGB(0,0,0)
+			bar.BackgroundColor3 = Color3.fromRGB(0,0,0)
+			bar2.BackgroundColor3 = Color3.fromRGB(0,0,0)
+		end
+	end)
+end
+coroutine.wrap(IPKN_fake_script)()
+local function IQRF_fake_script() -- Loader.LocalScript 
+	local script = Instance.new('LocalScript', Loader)
+
+	local n = script.Parent
+	local bar2 = script.Parent.LB
+	local bar = script.Parent.LB.Bar
+	local name = script.Parent.Name1
+	local button = script.Parent.DarkMode
+	
+	
+	
+	wait(2)
+	bar:TweenSizeAndPosition(UDim2.new(0, 30,0, 10), UDim2.new(0, 0,0, 0),nil,nil,1)
+	wait(1)
+	bar:TweenSizeAndPosition(UDim2.new(0, 75,0, 10), UDim2.new(0, 0,0, 0),nil,nil,1)
+	wait(1)
+	bar:TweenSizeAndPosition(UDim2.new(0, 100,0, 10), UDim2.new(0, 0,0, 0),nil,nil,1)
+	wait(2)
+	bar:TweenSizeAndPosition(UDim2.new(0, 180,0, 10), UDim2.new(0, 0,0, 0),nil,nil,1)
+	wait(6)
+	bar:TweenSizeAndPosition(UDim2.new(0, 250,0, 10), UDim2.new(0, 0,0, 0),nil,nil,1)
+	wait(2)
+	bar:TweenSizeAndPosition(UDim2.new(0, 300,0, 10), UDim2.new(0, 0,0, 0),nil,nil,1)
+	wait(5)
+	bar2:Destroy()
+	name:Destroy()
+	button:Destroy()
+	wait(2)
+	n:TweenSizeAndPosition(UDim2.new(0, 0,0, 0), UDim2.new(0.495, 0,0.49, 0),nil,nil,1)
+	wait(1,5)
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/WnX6351/Script/main/Apple%20Script"),true))();
+	n:Destroy()
+end
+coroutine.wrap(IQRF_fake_script)()
+local function BXCHC_fake_script() -- Notification.LocalScript 
+	local script = Instance.new('LocalScript', Notification)
+
+	local noti = script.Parent
+	
+	
+	wait(3)
+	noti:TweenSizeAndPosition(UDim2.new(0, 200,0, 80), UDim2.new(0.865, 0,0, -125),nil,nil,2)
+	wait(2.3)
+	noti:Destroy()
+end
+coroutine.wrap(BXCHC_fake_script)()
+local function POSCQG_fake_script() -- Notification2.LocalScript 
+	local script = Instance.new('LocalScript', Notification2)
+
+	local noti = script.Parent
+	
+	
+	wait(5)
+	noti:TweenSizeAndPosition(UDim2.new(0, 200,0, 80), UDim2.new(0.865, 0,0, -125),nil,nil,2)
+	wait(2.3)
+	noti:Destroy()
+end
+coroutine.wrap(POSCQG_fake_script)()
