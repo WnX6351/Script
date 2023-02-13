@@ -1,2 +1,98 @@
+-- Gui to Lua
+-- Version: 3.2
 
-loadstring(game:HttpGet(('https://gist.githubusercontent.com/Nilrogram/8b0c8bd710be142f383c71f79279752c/raw/e4fb01a7de7cd498bb53270d2ad191dfab268a88/FE%2520SussyHub'),true))();
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local sideframe = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local deco = Instance.new("Frame")
+local name1 = Instance.new("TextLabel")
+local logo = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.499693811, 0, 0.499478042, 0)
+Main.Size = UDim2.new(0, 650, 0, 400)
+
+UICorner.CornerRadius = UDim.new(0, 30)
+UICorner.Parent = Main
+
+sideframe.Name = "sideframe"
+sideframe.Parent = Main
+sideframe.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+sideframe.Size = UDim2.new(0, 130, 0, 400)
+
+UICorner_2.CornerRadius = UDim.new(0, 30)
+UICorner_2.Parent = sideframe
+
+deco.Name = "deco"
+deco.Parent = sideframe
+deco.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+deco.BorderSizePixel = 0
+deco.Position = UDim2.new(0.807692289, 0, 0, 0)
+deco.Size = UDim2.new(0, 25, 0, 400)
+
+name1.Name = "name1"
+name1.Parent = sideframe
+name1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name1.BackgroundTransparency = 1.000
+name1.Size = UDim2.new(0, 130, 0, 50)
+name1.Font = Enum.Font.SourceSans
+name1.Text = "Hub"
+name1.TextColor3 = Color3.fromRGB(0, 0, 0)
+name1.TextSize = 30.000
+
+logo.Name = "logo"
+logo.Parent = name1
+logo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+logo.BackgroundTransparency = 1.000
+logo.BorderSizePixel = 0
+logo.Position = UDim2.new(0.0769230425, 0, 0.199999988, 0)
+logo.Size = UDim2.new(0, 30, 0, 30)
+logo.Image = "http://www.roblox.com/asset/?id=41715858"
+logo.ImageColor3 = Color3.fromRGB(0, 0, 0)
+logo.ScaleType = Enum.ScaleType.Fit
+
+-- Scripts:
+
+local function OEFVYO_fake_script() -- Main.Size 
+	local script = Instance.new('LocalScript', Main)
+
+	local n = script.Parent
+	local x = script.Parent.sideframe
+	
+	
+	
+	
+	n:TweenSizeAndPosition(UDim2.new(0,0,0,0), UDim2.new(0.5, 0,0.5, 0),nil,nil,0)
+	x.Visible = false
+	
+	
+	
+	
+	wait(1)
+	
+	n:TweenSizeAndPosition(UDim2.new(0, 650,0, 400), UDim2.new(0.5, 0,0.5, 0),nil,nil,1)
+	wait(1)
+	x.Visible = true
+end
+coroutine.wrap(OEFVYO_fake_script)()
+local function UBPSRI_fake_script() -- Main.Draggable 
+	local script = Instance.new('LocalScript', Main)
+
+	local x = script.Parent
+	
+	x.Active = true
+	x.Draggable = true
+end
+coroutine.wrap(UBPSRI_fake_script)()
